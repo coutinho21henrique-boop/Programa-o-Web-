@@ -1,0 +1,38 @@
+[
+    {
+        "nome": "Guerreiro",
+        "forca": 7,
+        "mana": 3,
+        "arcano": 4
+    },
+    {
+        "nome": "Monge",
+        "forca": 4,
+        "mana": 7,
+        "arcano": 5
+    },
+    {
+        "nome": "Tanque",
+        "forca": 6,
+        "mana": 4,
+        "arcano": 3
+    },
+    {
+        "nome": "Guarda",
+        "forca": 5,
+        "mana": 3,
+        "arcano": 4
+    },
+    {
+        "nome": "Ladrão",
+        "forca": 3,
+        "mana": 5,
+        "arcano": 6
+    },
+    {
+        "nome": "Dragão",
+        "forca": 10,
+        "mana": 6,
+        "arcano": 8
+    }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo Arcano — Jogo de Cartas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo-magico"></div>
+    <main class="jogo">
+        <header class="topo">
+            <p class="sobretitulo">CRÔNICAS DO REINO</p>
+            <h1>DUelo <span>ARCANO</span></h1>
+            <p class="subtitulo">Escolha seu campeão. Domine os três poderes.</p>
+        </header>
+
+        <section class="painel-selecao">
+            <div class="titulo-secao">
+                <span class="linha"></span>
+                <h2>ESCOLHA SUA CARTA</h2>
+                <span class="linha"></span>
+            </div>
+            <div id="cartas" class="grade-cartas">
+                <p class="carregando">Preparando os campeões...</p>
+            </div>
+        </section>
+
+        <section class="arena">
+            <div class="titulo-secao">
+                <span class="linha"></span>
+                <h2>ARENA DE BATALHA</h2>
+                <span class="linha"></span>
+            </div>
+            <div class="duelo">
+                <div class="lado-duelo">
+                    <p class="identificador">SEU CAMPEÃO</p>
+                    <div id="cartaJogador" class="carta-arena vazia">
+                        <span class="selo-vazio">?</span>
+                        <p>Aguardando escolha</p>
+                    </div>
+                </div>
+                <div class="versus">VS</div>
+                <div class="lado-duelo">
+                    <p class="identificador">ADVERSÁRIO</p>
+                    <div id="cartaBot" class="carta-arena vazia">
+                        <span class="selo-vazio">?</span>
+                        <p>Aguardando desafio</p>
+                    </div>
+                </div>
+            </div>
+            <p id="resultado" class="resultado" aria-live="polite">Selecione uma carta para iniciar o duelo.</p>
+        </section>
+
+        <section class="placar">
+            <div class="ponto">
+                <span>JOGADOR</span>
+                <strong id="pontosJogador">0</strong>
+            </div>
+            <div class="ponto empate">
+                <span>EMPATES</span>
+                <strong id="empates">0</strong>
+            </div>
+            <div class="ponto">
+                <span>ROBÔ</span>
+                <strong id="pontosBot">0</strong>
+            </div>
+        </section>
+
+        <button id="reiniciar" class="botao-reiniciar" type="button">REINICIAR PLACAR</button>
+        <footer>DUelo ARCANO · JOGO DE CARTAS</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
